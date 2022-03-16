@@ -1,0 +1,5 @@
+DECLARE @ANS1 INT =(SeLECT MAX(MONTHS*SALARY) FROM Employee ) 
+DECLARE @ANS2 INT =(SELECT COUNT(employee_id) from employee where MONTHS*SALARY=
+(SeLECT MAX(MONTHS*SALARY) FROM Employee ) )
+
+select @ANS1 ,@ANS2

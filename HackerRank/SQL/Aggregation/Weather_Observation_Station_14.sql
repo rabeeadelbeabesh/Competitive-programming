@@ -1,0 +1,1 @@
+select format (max(LAT_N),'#.0000') from  STATION WHERE LAT_N<137.2345
